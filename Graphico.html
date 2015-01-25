@@ -1,0 +1,21 @@
+<head>
+  <title>Graphico</title>
+</head>
+
+<body>
+  <form class="new-message">
+  	<input type="text" name="text" placeholder="Story title" />
+  </form>
+  
+  <ul>
+	  {{#each stories}}
+	  	{{> story}}
+	  {{/each}}
+  </ul>
+</body>
+
+<template name="story">
+  <li>
+    <span>{{text}}</span>
+  </li>
+</template>
